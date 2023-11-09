@@ -129,5 +129,14 @@ $(function () {
         } else {
             $('#submit').attr('src', 'images/button-submit-blue.png');
         }
+
+        // オブジェクトでエラー判定とメッセージを返す
+        result = {
+            error: error,
+            message: message
+        }
+
+        // 戻り値としてエラーがあるかどうかを返す
+        return result;
    } 
 });
